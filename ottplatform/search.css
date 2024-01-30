@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333; 
+}
+
+
+#navbar {
+    background: linear-gradient(to right, #1d548f, #3ea4c6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#navbar img {
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+}
+
+#navbar #lhs {
+    display: flex;
+    align-items: center;
+}
+
+#navbar h4 {
+    margin: 0 15px;
+    color: #333; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#navbar h4:hover {
+    color: #007BFF;
+}
+
+
+#slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#slideshow img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+#slideshow .carousel-header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white; 
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+#movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#movies > div {
+    width: 300px; 
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#movies img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#movies p {
+    margin: 10px 0;
+}
+
+#movie_name {
+    padding: 10px;
+    margin: 10px;
+    width: 200px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#loader_div{
+    display: none;
+}
+#loader_div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+#loader_gif {
+    width: 50px;
+    height: 50px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
